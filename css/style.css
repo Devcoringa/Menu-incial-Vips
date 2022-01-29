@@ -1,0 +1,288 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:Open Sans;
+}
+
+html,body{
+	height:100%;
+}
+
+@font-face{
+	font-family:Open Sans;
+	src:url('../fonts/OpenSans-Light.ttf');
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	max-width:1280px;
+	width:100%;
+	margin:0 auto;
+}
+
+.header{
+	width:100%;
+	padding:0 2%;
+	height:60px;
+	background-color:#38ba61;
+}
+
+.header img{
+	margin:5px;
+	width:50px;
+}
+
+.container-banner{
+	padding:0 2%;
+	width:100%;
+	height:557px;
+	background-image: url('../images/breno_1.gif');
+	background-size:cover;
+	background-position:center;
+}
+
+.container-banner > .center{
+	height:100%;
+	text-align:right;
+}
+
+.form{
+	padding:10px 2%;
+	width:400px;
+	height:calc(100% + 30px);
+	display:inline-block;
+	position:relative;
+	top:-15px;
+	border: 8px solid rgba(120,120,120,0.5);
+	background-color:white;
+	background-clip:padding-box;
+}
+
+.form h2{
+	font-weight:normal;
+	color:#38ba61;
+	text-align:left;
+	font-size:22px;
+}
+
+.input-container{
+	margin-top:20px;
+	text-align:left;
+}
+
+.input-container span,.form p{
+	display:inline-block;
+	width:100%;
+	margin-top:8px;
+	font-size:17px;
+	color:#BBBBBB;
+	text-align:left;
+}
+
+.form p,.input-container [type=submit]{
+	margin-top:15px;
+	color:#fc1403;
+}
+
+.input-container [type=text]{
+	margin-top:8px;
+	width:344px;
+	padding:10px;
+	height:55px;
+	border:1px solid #ccc;
+}
+
+.form .input-container-bottom{
+	text-align:center;
+}
+
+.form input[type=submit]{
+	color: white;
+    font-size: 25px;
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    background-color: #3cd677;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor:crosshair;
+    border-bottom: 8px solid #299e56;
+}
+
+.form input[type=submit]:hover{
+   background-color:#3ead0e;
+}
+
+.container-list{
+	padding:30px;
+	margin-top:100px;
+	margin-left:100px;
+	float: left;
+	width: 519px;
+	height: 270px;
+	background-color:rgba(23,102,37,0.7);
+}
+
+.container-list ul,.container-list h2{
+	color:red;
+	list-style-position:inside;
+	text-align:left;
+}
+
+.container-list ul li{
+	margin-top:18px;
+	color:white;
+}
+
+.container-list h2{
+	text-align:center;
+}
+
+.container-2{
+	padding:40px 2%;
+	background-color:rgba(60, 176, 137,1.0);
+	text-align:center;
+}
+
+.container-2 h2{
+	font-weight:700;
+}
+
+.arrow{
+	position:relative;
+	left:50%;
+	margin-left:-20px;
+	top:60px;
+	width:44px;
+	height:44px;
+	background-image:url('../images/arrow.png');
+	background-size:100% 100%;
+}
+
+.section{
+	padding:20px 2%;
+}
+
+.section h2{
+	text-align:center;
+}
+
+.container-section{
+	margin-top:40px;
+	text-align:center;
+}
+
+.container-vips img{
+	width:50px;
+	float:left;
+}
+
+.container-single{
+	float:left;
+	padding:30px;
+	width:33.3%;
+}
+
+.container-single p{
+	text-align:justify;
+	padding:16px 25px;
+}
+
+.container-single img{
+	width:46px;
+}
+
+.division{
+	border-top:2px solid #888888;
+	text-align:center;
+	padding:30px 0;
+}
+
+
+@media screen and (max-width: 1024px){
+	.header{
+	height:auto;
+	width:100%;
+	text-align:center;
+	padding:16px 2%;
+	}
+
+	.header img{
+		margin:0;
+	}
+	.container-banner{
+		padding:40px 2%;
+		width:100%;
+		height:auto;
+		text-align: center;
+	}
+	.form {
+		max-width:400px;	
+		padding:10px;
+		width:60%;
+		float:right;
+		height:100%;
+		display:inline-block;
+		top:0;
+	}
+	.container-list{
+		padding:30px 25px;
+		width: 40%;
+		float:left;
+		margin-bottom:16px;
+		margin-left:-4px;
+		height:auto;
+		max-width:500px;
+	}
+
+}
+
+	.input-container [type=text]{
+		margin-top:8px;
+		max-width:344px;
+		width:100%;
+		padding:10px;
+		height:55px;
+	}
+
+
+	.form input[type=submit]{
+	    max-width: 280px;
+	    width:100%;
+	    height: 56px;
+	    display: inline-block;
+
+	}
+
+@media screen and (max-width: 768px){
+	.container-list{
+		margin-top:0;
+		float:none;
+		display:inline-block;
+		width:86%;
+	}
+	.form{
+		float:none;
+		display:inline-block;
+		width:100%;
+	}
+	.container-single{
+		float:none;
+		width:100%;
+		max-width:600px;
+		padding:30px 0;
+	}
+}	
+
+
+ @media screen and (max-width: 1200px){
+ 	.container-list{
+ 		margin-left:0;
+	}
+
+ }
